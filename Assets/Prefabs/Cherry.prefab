@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5373316150439076608}
   - component: {fileID: 4434547699789874505}
+  - component: {fileID: 361430693535168735}
+  - component: {fileID: -2191968835844157907}
   m_Layer: 0
   m_Name: Cherry
   m_TagString: Untagged
@@ -91,3 +93,110 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!50 &361430693535168735
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6703472591069026642}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1.5
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!60 &-2191968835844157907
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6703472591069026642}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.97999996, y: 1.0999999}
+    newSize: {x: 0.97999996, y: 1.0999999}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.0041311383, y: 0.5433924}
+      - {x: -0.27064234, y: 0.5497337}
+      - {x: -0.30067497, y: 0.53065133}
+      - {x: -0.30127937, y: 0.43627214}
+      - {x: -0.2842673, y: 0.37906837}
+      - {x: -0.1840716, y: 0.28026295}
+      - {x: -0.17792398, y: 0.2568115}
+      - {x: -0.19418323, y: 0.24091077}
+      - {x: -0.2334615, y: 0.23737204}
+      - {x: -0.299102, y: 0.20842385}
+      - {x: -0.37912187, y: 0.12796213}
+      - {x: -0.4483133, y: 0.050062656}
+      - {x: -0.4744538, y: 0.0050760508}
+      - {x: -0.4760873, y: -0.2569732}
+      - {x: -0.4447683, y: -0.2992277}
+      - {x: -0.36130682, y: -0.38391584}
+      - {x: -0.25099137, y: -0.4763947}
+      - {x: -0.053903103, y: -0.4723959}
+      - {x: 0.06841248, y: -0.5386894}
+      - {x: 0.25483137, y: -0.5369954}
+      - {x: 0.3310797, y: -0.4763947}
+      - {x: 0.4477017, y: -0.35499993}
+      - {x: 0.4689083, y: -0.32261956}
+      - {x: 0.47771102, y: -0.12928593}
+      - {x: 0.44567502, y: -0.049787045}
+      - {x: 0.37218398, y: 0.016378284}
+      - {x: 0.35649604, y: 0.11923683}
+      - {x: 0.4199738, y: 0.24174225}
+      - {x: 0.4153632, y: 0.31491897}
+      - {x: 0.37889338, y: 0.37251365}
+      - {x: 0.30429935, y: 0.42461824}
+      - {x: 0.16151792, y: 0.41366112}
+      - {x: 0.13194138, y: 0.44045871}
+  m_UseDelaunayMesh: 1
