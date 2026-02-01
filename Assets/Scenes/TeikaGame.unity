@@ -451,6 +451,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &942776717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6703472591069026642, guid: 2ce33751b18f9489cb3b4b0d8439ee65, type: 3}
+  m_PrefabInstance: {fileID: 8197791002159779262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &977221663
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBehavior
   speed: 0.01
+  fruit: {fileID: 942776717}
 --- !u!1 &1458174073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1192,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2191968835844157907, guid: 2ce33751b18f9489cb3b4b0d8439ee65, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5373316150439076608, guid: 2ce33751b18f9489cb3b4b0d8439ee65, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.61

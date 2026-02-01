@@ -5,6 +5,7 @@ public class PlayerBehavior : MonoBehaviour
 {
     public float speed; //public means you can edit it in Unity Inspector
     public GameObject fruit;
+    private GameObject currentFruit;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,19 +17,22 @@ public class PlayerBehavior : MonoBehaviour
     
     void Update()
     {
-        if (fruit != null)
+        if (currentFruit != null)
         {
             Vector3 fruitOffset = new Vector3(0.0f, -1.0f, 0.0f);
-            fruit.transform.position = gameObject.transform.position + fruitOffset; 
-            fruit.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
-            fruit.GetComponent<Collider2D>().enabled = false;
+            currentFruit.transform.position = gameObject.transform.position + fruitOffset; 
+            currentFruit.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
+        }
+        else
+        {
+            currentFruit = Instantiate(fruit, transform.position, Quaternion.identity);
         }
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            fruit.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
-            fruit.GetComponent<Collider2D>().enabled = true;
-            fruit = null;
+            currentFruit.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+            currentFruit.GetComponent<Collider2D>().enabled = true;
+            currentFruit = null;
         }
         Keyboard kb = Keyboard.current;
         if (kb.leftArrowKey.isPressed || kb.aKey.isPressed)
