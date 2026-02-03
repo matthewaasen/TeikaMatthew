@@ -1,11 +1,13 @@
+// cherry -> strawberry -> lemon  -> grape  -> orange -> apple -> pineapple -> pear -> banana -> watermelon
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerBehavior : MonoBehaviour
 {
     public float speed; //public means you can edit it in Unity Inspector
-    public GameObject fruit;
     private GameObject currentFruit;
+
+    public GameObject[] fruits;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,7 +27,8 @@ public class PlayerBehavior : MonoBehaviour
         }
         else
         {
-            currentFruit = Instantiate(fruit, transform.position, Quaternion.identity);
+            int choice = Random.Range(0, fruits.Length);
+            currentFruit = Instantiate(fruits[choice], transform.position, Quaternion.identity);
         }
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
