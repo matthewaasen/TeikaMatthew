@@ -9,6 +9,8 @@ public class PlayerBehavior : MonoBehaviour
 
     public GameObject[] fruits;
 
+    public double boundary = 2.18;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,15 +43,22 @@ public class PlayerBehavior : MonoBehaviour
         if (kb.leftArrowKey.isPressed || kb.aKey.isPressed)
         {
             Vector3 newPos = transform.position;
-            newPos.x = newPos.x - speed;
-            transform.position = newPos;
+            if(newPos.x >= -boundary)
+            {
+                newPos.x = newPos.x - speed;
+                transform.position = newPos;
+            }
+            
         }
 
         if (kb.rightArrowKey.isPressed || kb.dKey.isPressed)
         {
             Vector3 newPos = transform.position;
-            newPos.x = newPos.x + speed;
-            transform.position = newPos;
+            if(newPos.x <= boundary)
+            {
+                newPos.x = newPos.x + speed;
+                transform.position = newPos;
+            }
         }
     }
 }
