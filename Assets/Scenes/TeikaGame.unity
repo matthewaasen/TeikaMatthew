@@ -588,6 +588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pineapple
       objectReference: {fileID: 0}
+    - target: {fileID: 2547871923703379650, guid: 73706d4d13a874359bbc3a209118b94e, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
+      objectReference: {fileID: 0}
     - target: {fileID: 3804840592743140496, guid: 73706d4d13a874359bbc3a209118b94e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -1335,7 +1339,7 @@ GameObject:
   - component: {fileID: 1395143430}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2042,6 +2046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grapes
       objectReference: {fileID: 0}
+    - target: {fileID: 8210955850709979740, guid: 007e281a16fc54a4a9d92a84cd1a75b8, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2058,6 +2066,10 @@ PrefabInstance:
     - target: {fileID: 5319970451453019460, guid: 196d359f4fc7643928cef20e6f4c7be0, type: 3}
       propertyPath: m_Name
       value: Banana
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319970451453019460, guid: 196d359f4fc7643928cef20e6f4c7be0, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
       objectReference: {fileID: 0}
     - target: {fileID: 6792002937625804566, guid: 196d359f4fc7643928cef20e6f4c7be0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2536,6 +2548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pear
       objectReference: {fileID: 0}
+    - target: {fileID: 4731114664264950763, guid: a3e900f5444024de58a05c215fefcced, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
+      objectReference: {fileID: 0}
     - target: {fileID: 6214428620917676473, guid: a3e900f5444024de58a05c215fefcced, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.06
@@ -2592,6 +2608,10 @@ PrefabInstance:
     - target: {fileID: 2819094454754480029, guid: 8884140e3c5074741b673ae372e8c9e4, type: 3}
       propertyPath: m_Name
       value: Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 2819094454754480029, guid: 8884140e3c5074741b673ae372e8c9e4, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
       objectReference: {fileID: 0}
     - target: {fileID: 3497380632141297103, guid: 8884140e3c5074741b673ae372e8c9e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2690,6 +2710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple
       objectReference: {fileID: 0}
+    - target: {fileID: 2070474119842361483, guid: dc9b67683c0b64a8fa4ce416ff7c9e1d, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2746,6 +2770,10 @@ PrefabInstance:
     - target: {fileID: 6703472591069026642, guid: 2ce33751b18f9489cb3b4b0d8439ee65, type: 3}
       propertyPath: m_Name
       value: Cherry
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703472591069026642, guid: 2ce33751b18f9489cb3b4b0d8439ee65, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2808,6 +2836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Watermelon
       objectReference: {fileID: 0}
+    - target: {fileID: 6344876046165566580, guid: 22e51343f34c04b6481008043f2b3175, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2824,6 +2856,10 @@ PrefabInstance:
     - target: {fileID: 595790237575675530, guid: 52091a071bdd540c4bad75f7f00d531b, type: 3}
       propertyPath: m_Name
       value: Lemon
+      objectReference: {fileID: 0}
+    - target: {fileID: 595790237575675530, guid: 52091a071bdd540c4bad75f7f00d531b, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
       objectReference: {fileID: 0}
     - target: {fileID: 2293161584549233880, guid: 52091a071bdd540c4bad75f7f00d531b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2881,6 +2917,10 @@ PrefabInstance:
     - target: {fileID: 2544731579379260405, guid: 27e2523ac49ac4462b9f811b57e3ecf0, type: 3}
       propertyPath: m_Name
       value: Strawberry
+      objectReference: {fileID: 0}
+    - target: {fileID: 2544731579379260405, guid: 27e2523ac49ac4462b9f811b57e3ecf0, type: 3}
+      propertyPath: m_TagString
+      value: Fruit
       objectReference: {fileID: 0}
     - target: {fileID: 3802988328302174631, guid: 27e2523ac49ac4462b9f811b57e3ecf0, type: 3}
       propertyPath: m_LocalPosition.x

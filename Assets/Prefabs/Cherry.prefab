@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4434547699789874505}
   - component: {fileID: 361430693535168735}
   - component: {fileID: -2191968835844157907}
+  - component: {fileID: -3091865826195122198}
   m_Layer: 0
   m_Name: Cherry
   m_TagString: Untagged
@@ -200,3 +201,15 @@ PolygonCollider2D:
       - {x: 0.16151792, y: 0.41366112}
       - {x: 0.13194138, y: 0.44045871}
   m_UseDelaunayMesh: 1
+--- !u!114 &-3091865826195122198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6703472591069026642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b261d900e8ee432ea4f1ce7c70315cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

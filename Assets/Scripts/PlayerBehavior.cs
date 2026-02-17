@@ -29,7 +29,7 @@ public class PlayerBehavior : MonoBehaviour
         }
         else
         {
-            int choice = Random.Range(0, fruits.Length);
+            int choice = Random.Range(0, 3);
             currentFruit = Instantiate(fruits[choice], transform.position, Quaternion.identity);
         }
 
@@ -50,7 +50,7 @@ public class PlayerBehavior : MonoBehaviour
             }
             
         }
-
+        
         if (kb.rightArrowKey.isPressed || kb.dKey.isPressed)
         {
             Vector3 newPos = transform.position;
