@@ -1,7 +1,7 @@
-// cherry -> strawberry -> lemon  -> grape  -> orange -> apple -> pineapple -> pear -> banana -> watermelon
+// cherry 0 -> strawberry 10   -> lemon 30 -> grape 70 -> orange 130 -> apple 210 -> pineapple 310 -> pear 430 -> banana 570 -> watermelon
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using TMPro;
 public class PlayerBehavior : MonoBehaviour
 {
     public float speed; //public means you can edit it in Unity Inspector
@@ -10,6 +10,10 @@ public class PlayerBehavior : MonoBehaviour
     public GameObject[] fruits;
 
     public double boundary = 2.18;
+
+    public int[] points;
+    public int total = 0;
+    public TMP_Text scoreText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -61,4 +65,11 @@ public class PlayerBehavior : MonoBehaviour
             }
         }
     }
+
+    public void updateScore(int index)
+    {
+        total += points[index];
+        scoreText.SetText("Score: " + total);
+    }
+    
 }
