@@ -9,6 +9,7 @@ public class FruitBehavior : MonoBehaviour
     void Start()
     {
         fruits = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>().fruits;
+
     }
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class FruitBehavior : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Fruit"))
         {
+            
             GameObject otherFruit = collision.gameObject;
             int otherFruitType = otherFruit.GetComponent<FruitBehavior>().fruitType;
 
@@ -28,6 +30,7 @@ public class FruitBehavior : MonoBehaviour
             {
                 if(transform.position.x > otherFruit.transform.position.x || transform.position.y > otherFruit.transform.position.y && transform.position.x == otherFruit.transform.position.x)
                 {
+                   GetComponent<AudioSource>().Play();
                    GameObject newFruit = Instantiate(fruits[fruitType + 1], Vector3.Lerp(transform.position,
                    otherFruit.transform.position, 0.5f), Quaternion.identity);
                    newFruit.GetComponent<Collider2D>().enabled = true;
