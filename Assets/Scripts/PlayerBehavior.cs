@@ -14,6 +14,7 @@ public class PlayerBehavior : MonoBehaviour
     public int[] points;
     public int total = 0;
     public TMP_Text scoreText;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,8 +34,18 @@ public class PlayerBehavior : MonoBehaviour
         }
         else
         {
-            int choice = Random.Range(0, 3);
-            currentFruit = Instantiate(fruits[choice], transform.position, Quaternion.identity);
+            int choice = 0;
+            //makes big fruit for debugging purposes
+            if (Keyboard.current.wKey.isPressed)
+            {
+                 choice = 8;
+            }
+            else
+            {
+                 choice = GameObject.FindGameObjectWithTag("Queue").GetComponent<QueueController>().updateQueue();
+
+            }
+                currentFruit = Instantiate(fruits[choice], transform.position, Quaternion.identity);
         }
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)

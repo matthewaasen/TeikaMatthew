@@ -37,7 +37,7 @@ public class TopBorderBehavior : MonoBehaviour
                 GameObject wall = walls[i];
                 Rigidbody2D rb = wall.GetComponent<Rigidbody2D>();
                 rb.bodyType = RigidbodyType2D.Dynamic;  
-
+                rb.WakeUp();
 
             }
         }

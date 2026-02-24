@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fruit
   - Wall
+  - Queue
   layers:
   - Default
   - TransparentFX
