@@ -41,7 +41,7 @@ public class PlayerBehavior : MonoBehaviour
         {
             currentFruit.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
             currentFruit.GetComponent<Collider2D>().enabled = true;
-            GetComponent<AudioSource>().Play();
+            GetComponents<AudioSource>()[1].Play();
             currentFruit = null;
         }
         Keyboard kb = Keyboard.current;
