@@ -14,12 +14,12 @@ public class PlayerBehavior : MonoBehaviour
     public int[] points;
     public int total = 0;
     public TMP_Text scoreText;
-    
+    private QueueController queue;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        queue =  GameObject.FindGameObjectsWithTag("Queue")[0].GetComponent<QueueController>();
     }
 
     // Update is called once per frame
@@ -42,7 +42,7 @@ public class PlayerBehavior : MonoBehaviour
             }
             else
             {
-                 choice = GameObject.FindGameObjectWithTag("Queue").GetComponent<QueueController>().updateQueue();
+                 choice = queue.updateQueue();
 
             }
                 currentFruit = Instantiate(fruits[choice], transform.position, Quaternion.identity);
