@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using System;
 public class PlayerBehavior : MonoBehaviour
 {
     public float speed; //public means you can edit it in Unity Inspector
@@ -15,6 +16,8 @@ public class PlayerBehavior : MonoBehaviour
     public int total = 0;
     public TMP_Text scoreText;
     private QueueController queue;
+    private float dropTimer;
+    public float dropCooldown;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +29,7 @@ public class PlayerBehavior : MonoBehaviour
     
     void Update()
     {
+        dropTimer -= Time.deltaTime;
         if (currentFruit != null)
         {
             Vector3 fruitOffset = new Vector3(0.0f, -1.0f, 0.0f);
@@ -50,10 +54,15 @@ public class PlayerBehavior : MonoBehaviour
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            currentFruit.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
-            currentFruit.GetComponent<Collider2D>().enabled = true;
-            GetComponents<AudioSource>()[1].Play();
-            currentFruit = null;
+            if (dropTimer <= 0.0f)
+            {
+                currentFruit.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+                currentFruit.GetComponent<Collider2D>().enabled = true;
+                GetComponents<AudioSource>()[1].Play();
+                currentFruit = null;
+                dropTimer = dropCooldown;
+            }
+            
         }
         Keyboard kb = Keyboard.current;
         if (kb.leftArrowKey.isPressed || kb.aKey.isPressed)
@@ -61,7 +70,7 @@ public class PlayerBehavior : MonoBehaviour
             Vector3 newPos = transform.position;
             if(newPos.x >= -boundary)
             {
-                newPos.x = newPos.x - speed;
+                newPos.x = newPos.x - (speed * Time.deltaTime);
                 transform.position = newPos;
             }
             
@@ -72,7 +81,7 @@ public class PlayerBehavior : MonoBehaviour
             Vector3 newPos = transform.position;
             if(newPos.x <= boundary)
             {
-                newPos.x = newPos.x + speed;
+                newPos.x = newPos.x + (speed * Time.deltaTime);
                 transform.position = newPos;
             }
         }

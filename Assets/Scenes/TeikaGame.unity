@@ -1026,8 +1026,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -39}
-  m_SizeDelta: {x: 150, y: 43.329987}
+  m_AnchoredPosition: {x: 110, y: -39}
+  m_SizeDelta: {x: 200, y: 43.329987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &662469317
 MonoBehaviour:
@@ -1791,7 +1791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1536f6c609a7e4a0095c6b1f6ad7ccf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBehavior
-  speed: 0.005
+  speed: 5
   fruits:
   - {fileID: 942776717}
   - {fileID: 875731736}
@@ -1807,6 +1807,7 @@ MonoBehaviour:
   points: 0a0000001e0000004600000082000000d200000036010000ae0100003a020000
   total: 0
   scoreText: {fileID: 1802872175}
+  dropCooldown: 0.7
 --- !u!82 &1395143431
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2529,7 +2530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: 149}
+  m_AnchoredPosition: {x: -100, y: 218.8}
   m_SizeDelta: {x: 129.87, y: 22.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1687332985
@@ -2771,7 +2772,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: -0.604}
+  m_AnchoredPosition: {x: -20, y: -0.604}
   m_SizeDelta: {x: 133.05, y: 28.622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1802872175
