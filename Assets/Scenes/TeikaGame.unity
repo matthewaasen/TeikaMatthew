@@ -1193,7 +1193,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8160775752198118580, guid: ee517ced2dee8426abcafccf3adfea81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1294,7 +1294,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8160775752198118580, guid: ee517ced2dee8426abcafccf3adfea81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1507,8 +1507,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QueueController
   UISprites:
-  - {fileID: 8586885197115800619, guid: ee517ced2dee8426abcafccf3adfea81, type: 3}
-  - {fileID: 8160775752198118580, guid: ee517ced2dee8426abcafccf3adfea81, type: 3}
+  - {fileID: 4181030446692697934, guid: 1faa949a8c60b46379e705c6666e3f9f, type: 3}
+  - {fileID: 9074413886666814644, guid: 1faa949a8c60b46379e705c6666e3f9f, type: 3}
   - {fileID: 3946690252706702459, guid: 1faa949a8c60b46379e705c6666e3f9f, type: 3}
   - {fileID: -543690263960023712, guid: 1faa949a8c60b46379e705c6666e3f9f, type: 3}
   queue: 00000000000000000000000000000000
@@ -1804,10 +1804,11 @@ MonoBehaviour:
   - {fileID: 1855864001}
   - {fileID: 1492285961}
   boundary: 2.35
-  points: 0a0000001e0000004600000082000000d200000036010000ae0100003a020000
+  points: 0a0000001e0000004600000082000000d200000036010000ae0100003a020000da020000
   total: 0
   scoreText: {fileID: 1802872175}
-  dropCooldown: 0.7
+  dropCooldown: 0.3
+  topBorder: {fileID: 1532874911}
 --- !u!82 &1395143431
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2081,7 +2082,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8160775752198118580, guid: ee517ced2dee8426abcafccf3adfea81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2496,6 +2497,7 @@ MonoBehaviour:
   - {fileID: 635239240}
   - {fileID: 977221663}
   - {fileID: 499333060}
+  isGameRunning: 1
 --- !u!1 &1687332983
 GameObject:
   m_ObjectHideFlags: 0
@@ -3101,7 +3103,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8160775752198118580, guid: ee517ced2dee8426abcafccf3adfea81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

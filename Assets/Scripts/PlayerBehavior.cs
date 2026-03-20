@@ -18,7 +18,7 @@ public class PlayerBehavior : MonoBehaviour
     private QueueController queue;
     private float dropTimer;
     public float dropCooldown;
-
+    public GameObject topBorder;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,6 +29,7 @@ public class PlayerBehavior : MonoBehaviour
     
     void Update()
     {
+        if(topBorder.GetComponent<TopBorderBehavior>().isGameRunning){
         dropTimer -= Time.deltaTime;
         if (currentFruit != null)
         {
@@ -84,6 +85,7 @@ public class PlayerBehavior : MonoBehaviour
                 newPos.x = newPos.x + (speed * Time.deltaTime);
                 transform.position = newPos;
             }
+        }
         }
     }
 

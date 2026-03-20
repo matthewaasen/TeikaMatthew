@@ -8,6 +8,7 @@ public class TopBorderBehavior : MonoBehaviour
     public TMP_Text gameOverText;
     public GameObject gameOverPanel;
     public GameObject[] walls;
+    public bool isGameRunning = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,13 +33,14 @@ public class TopBorderBehavior : MonoBehaviour
         {
             gameOverText.gameObject.SetActive(true);
             gameOverPanel.SetActive(true);
+            isGameRunning = false;
             for(int i = 0; i < walls.Length; i++)
             {
                 GameObject wall = walls[i];
                 Rigidbody2D rb = wall.GetComponent<Rigidbody2D>();
                 rb.bodyType = RigidbodyType2D.Dynamic;  
                 rb.WakeUp();
-
+                
             }
         }
     }
